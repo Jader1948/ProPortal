@@ -6,10 +6,9 @@ import cloudhumans.proportal.dto.ProPostDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper(componentModel = "spring")
-public interface ProMapper {
+@Mapper(componentModel="spring")
+public interface ProMapper extends AbstractMapper<Pro, ProPostDto>{
 
     ProMapper INSTANCE = Mappers.getMapper(ProMapper.class);
-
-    Pro toPro(ProPostDto proPostDto);
+    
 }

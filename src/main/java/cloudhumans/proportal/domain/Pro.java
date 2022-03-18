@@ -40,6 +40,6 @@ public class Pro {
     private Integer writingScore;
 
     @Column(name = "referralCode")
-    private String referralCode;
+    private Integer referralCode;
 
 }

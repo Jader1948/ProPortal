@@ -18,6 +18,6 @@ public class ProService {
 
     @Transactional
     public Pro save(ProPostDto proPostDto) {
-        return proRepository.save(ProMapper.INSTANCE.toPro(proPostDto));
+        return proRepository.save(ProMapper.INSTANCE.toEntity(proPostDto));
     }
 }

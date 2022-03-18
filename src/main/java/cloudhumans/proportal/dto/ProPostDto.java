@@ -1,6 +1,8 @@
 package cloudhumans.proportal.dto;
 
 
+import cloudhumans.proportal.domain.InternetTest;
+import cloudhumans.proportal.domain.PastExperiences;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -28,14 +30,14 @@ public class ProPostDto {
     private String educationLevels;
 
     @JsonProperty("pastExperiences")
-    private String pastExperiences;
+    private PastExperiences pastExperiences;
 
     @JsonProperty("internetTest")
-    private Double internetTest;
+    private InternetTest internetTest;
 
     @JsonProperty("writingScore")
-    private Integer writingScore;
+    private Double writingScore;
 
     @JsonProperty("referralCode")
-    private String referralCode;
+    private Integer referralCode;
 }
